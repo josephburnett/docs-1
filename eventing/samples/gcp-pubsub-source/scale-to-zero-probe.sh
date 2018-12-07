@@ -7,8 +7,8 @@ when ()
 
 while :
 do
-    echo "Waiting for Revision to scale to zero (6 min)" | when
-    sleep 360
+    echo "Waiting for Revision to scale to zero (30 min)" | when
+    sleep 1800
     kubectl get deploy 2>&1 | when
 
     echo "Publishing a random message and waiting for scale from zero (30 sec)" | when
