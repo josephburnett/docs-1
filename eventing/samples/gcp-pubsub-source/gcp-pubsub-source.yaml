@@ -9,7 +9,7 @@ spec:
   gcpCredsSecret:  # A secret in the knative-sources namespace
     name: google-cloud-key
     key: key.json
-  googleCloudProject: MY_GCP_PROJECT  # Replace this
+  googleCloudProject: joe-does-knative  # Replace this
   topic: testing
   sink:
     apiVersion: eventing.knative.dev/v1alpha1
